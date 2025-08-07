@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Elements Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+    header, footer { background: #333; color: #fff; padding: 10px; text-align: center; }
+    nav a { margin: 0 10px; text-decoration: none; color: white; }
+    section { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+    table, th, td { border: 1px solid #000; border-collapse: collapse; padding: 6px; }
+    form input, form textarea, form select, form button { display: block; margin: 5px 0; }
+    img { max-width: 150px; display: block; margin: 10px 0; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My HTML Practice Page</h1>
+    <nav>
+      <a href="#text">Text</a>
+      <a href="#media">Media</a>
+      <a href="#list">Lists</a>
+      <a href="#table">Table</a>
+      <a href="#form">Form</a>
+    </nav>
+  </header>
+
+  <section id="text">
+    <h2>Basic Text Elements</h2>
+    <p>This is a paragraph. <strong>Strong text</strong> and <em>emphasized text</em>.</p>
+    <p>Here is some <mark>highlighted text</mark>, and here is a <small>smaller note</small>.</p>
+    <h3>Headings</h3>
+    <h1>H1 Heading</h1>
+    <h2>H2 Heading</h2>
+    <h3>H3 Heading</h3>
+    <h4>H4 Heading</h4>
+    <h5>H5 Heading</h5>
+    <h6>H6 Heading</h6>
+    <hr>
+    <blockquote cite="https://example.com">
+      “This is a blockquote example.”
+    </blockquote>
+    <code>console.log("Hello World!");</code>
+    <pre>
+Line 1
+  Line 2 indented
+    Line 3 more indented
+    </pre>
+  </section>
+
+  <section id="media">
+    <h2>Media Elements</h2>
+    <img src="https://via.placeholder.com/150" alt="Sample Image">
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <video width="320" height="240" controls>
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="list">
+    <h2>Lists</h2>
+    <h3>Ordered List</h3>
+    <ol>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ol>
+    <h3>Unordered List</h3>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ul>
+    <h3>Definition List</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+    </dl>
+  </section>
+
+  <section id="table">
+    <h2>Table Example</h2>
+    <table>
+      <caption>Sample Data Table</caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice</td>
+          <td>25</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>30</td>
+          <td>USA</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="form">
+    <h2>Form Example</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter password">
+
+      <label for="color">Choose a color:</label>
+      <input type="color" id="color">
+
+      <label for="file">Upload file:</label>
+      <input type="file" id="file">
+
+      <label for="range">Select range:</label>
+      <input type="range" id="range">
+
+      <label for="fruit">Select a fruit:</label>
+      <select id="fruit">
+        <option>Apple</option>
+        <option>Mango</option>
+        <option>Orange</option>
+      </select>
+
+      <p>Choose your gender:</p>
+      <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+      <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+
+      <p>Select your hobbies:</p>
+      <input type="checkbox" id="hobby1"> <label for="hobby1">Reading</label>
+      <input type="checkbox" id="hobby2"> <label for="hobby2">Sports</label>
+
+      <label for="message">Your message:</label>
+      <textarea id="message" rows="4" cols="30" placeholder="Write something..."></textarea>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My HTML Practice. <a href="#">Back to top</a></p>
+  </footer>
+
+</body>
+</html>

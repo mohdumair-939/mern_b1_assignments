@@ -1,79 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umair Mohammed – Resume</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: gray; }
+    header, footer { background: #cac6c6ba; color: blue; padding: 15px; text-align: center; border-radius: 6px; }
+    header h1 { margin: 0; font-size: 75px;  font-weight: 100;}
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+    section { background: #fff; padding: 20px; margin: 20px 0; border-radius: 8px; }
+    h2 {font-family: Arial, Helvetica, sans-serif;font-size: 75px; color: blue  ; margin-top: 0; }
+    img { max-width: 150px; border-radius: 50%; display: block; margin: 10px auto; }
+    ul { list-style-type: square; padding-left: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #888; padding: 8px; text-align: left; }
+    footer p { margin: 5px 0; }
+    .center { text-align: center; }
+    pre, code { background: #eee; padding: 5px; display: inline-block; border-radius: 4px; }
+  </style>
 </head>
 <body>
-    <header>
-        <strong>hi,<em style="color: aqua; padding: 0px;">vikas</em>!</strong>
-      <h1 style="background-color: gray; font-family: Arial; color:blue; font-size: 70px">Welcome to My Portfolio</h1>
-      <a herf="">
-        <button>
-           About
-        </button>
-      </a>
-      <a herf="">
-        <button>
-           Skills
-        </button>
-      </a>
-      <a herf="">
-        <button>
-           Projects
-        </button>
-      </a>
-      <a herf="">
-        <button>
-           Contacts
-        </button>
-      </a>
-   </header>
-   <main>
-      <section id="about">
-         <h1 style="background-color: gray; font-family: Arial; color:blue; font-size: 70px ;">SNEHA M</h1>
-         <p>I am a passionate web developer with a focus on front-end technologies.</p>
-         <p>I am currently pursuing my B.Tech in <em>Anurag University </em> Hyderabad</p>
-         <p>I have learnt web developmet from <br> swaroop vitb youtube channel.</p>
-         <p>You Can <strong>Click here</strong> to checkout</p>
-      </section>
-      <section id="Skills">
-         <h1 style="background-color: gray; font-family: Arial; color:blue; font-size: 70px">Skills</h1>
-    <ol>
-        <li>python</li>
-        <li>javascript</li>
-        <li>data structures</li>
-        <li>html</li>
-        <li>css</li>
-    </ol>
-      </section>
-      <section id="Projects">
-         <h1 style="background-color: gray; font-family: Arial; color:aqua; font-size: 70px">Projects</h1>
-         <table border="1">
-            <tr>
-               <th>Projects</th>
-               <th>Description</th>
-            </tr>
-            <tr>
-               <td>Portfolio Website</td>
-               <td>I have built a portfolio website by using HTML,CSS & javascript</td>
-            </tr>
-            <tr>
-               <td>Python simple calculator</td>
-               <td>I have built a simple calculator in the course by code with siri</td>
-            </tr> 
-         </table>     
-      </section>
-      <section id="Certificates">
-        <h1 style="background-color: gray; font-family: Arial; color:blue; font-size: 70px">Certificates</h1>
-        <ol>
-            <li>AIML Virtual internship--AICTE</li>
-            <li>Basics of MongoDB--MongoDB</li>
-            <li>Cloud Computing--Infosys</li>
-        </ol>
-      </section>
 
-    
+  <header>
+    <h1>Umair Mohammed</h1>
+    <h3>B.Tech Student | Web Developer | AI Enthusiast</h3>
+    <nav>
+      <a href="#summary">Summary</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="center">
+    <img src="myphoto.jpg" alt="Your Profile Photo">
+  </section>
+
+  <section id="summary">
+    <h2>Summary</h2>
+    <p>Hello! I’m <strong>Umair Mohammed</strong>, a <em>2nd-year B.Tech student</em> passionate about building
+      innovative projects in <mark>Web Development</mark> and <mark>AI/ML</mark>. I love participating in hackathons and
+      creating real‑world solutions. Here’s a quick look at my journey.</p>
+    <hr>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Degree</th>
+          <th>College</th>
+          <th>Year</th>
+          <th>CGPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>B.Tech (CSE)</td>
+          <td>Anurag University</td>
+          <td>2022 – 2026</td>
+          <td>8.5 (till date)</td>
+        </tr>
+        <tr>
+          <td>Intermediate</td>
+          <td>Sri Chaitanya Junior College</td>
+          <td>2020 – 2022</td>
+          <td>95%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Frontend: HTML, CSS, JavaScript, React.js</li>
+      <li>Backend: Node.js, Express.js, MongoDB</li>
+      <li>Other: Git/GitHub, AI/ML basics, Hackathon Experience</li>
+    </ul>
+    <blockquote>
+      “Code is like humor. When you have to explain it, it’s bad.”
+    </blockquote>
+    <p>Sample code I love to use: <code>console.log("Keep building!")</code></p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ol>
+      <li><strong>Smart Shopping Trolley</strong> – IoT based project to scan items and auto‑generate bills.</li>
+      <li><strong>AI Call Assistant</strong> – Automated voice bot for payment reminders using Twilio & LLMs.</li>
+      <li><strong>Real Estate Platform</strong> – MERN stack app for property listings with OTP verification.</li>
+    </ol>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:">umairofficial040@gmail.com</a></p>
+    <p>Phone: +91-9392859095</p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/umair</a></p>
+    <p>GitHub: <a href="#">github.com/umair</a></p>
+
+    <h3>Quick Message</h3>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <label for="message">Your Message:</label>
+      <textarea id="message" rows="4" placeholder="Type your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Umair Mohammed | <a href="#top" style="color:#fff;">Back to top</a></p>
+  </footer>
+
 </body>
 </html>
