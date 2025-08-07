@@ -1,0 +1,255 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>W3Schools Login</title>
+<style>
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #232733;
+    color: white;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Container */
+  .container {
+    display: flex;
+    background-color: #232733;
+    width: 900px;
+    max-width: 95vw;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  }
+
+  /* Left Panel */
+  .left-panel {
+    flex: 1;
+    padding: 60px 50px;
+    /* position relative removed since no absolute element */
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 28px;
+    color: #22a455;
+    margin-bottom: 30px;
+  }
+  .left-panel h1 {
+    font-size: 40px;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+  }
+  .left-panel h1 .heart {
+    color: #22a455;
+    margin-left: 12px;
+    font-size: 42px;
+  }
+  .left-panel p {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 40px 0;
+  }
+  ul.features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul.features li {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  ul.features li::before {
+    content: "✔";
+    color: #22a455;
+    margin-right: 12px;
+    font-weight: 700;
+  }
+
+  /* Right Panel */
+  .right-panel {
+    width: 380px;
+    background-color: white;
+    color: black;
+    padding: 40px 35px;
+    position: relative;
+    border-radius: 0 10px 10px 0;
+  }
+  .close-btn {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #999;
+    cursor: pointer;
+  }
+  .close-btn:hover {
+    color: #555;
+  }
+  .right-panel h2 {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  .right-panel p.subtext {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .right-panel p.register-text {
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+  .right-panel p.register-text a {
+    color: #22a455;
+    text-decoration: none;
+  }
+  .right-panel p.register-text a:hover {
+    text-decoration: underline;
+  }
+
+  /* Social Buttons Grid */
+  .social-login {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+  .social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: white;
+    transition: background-color 0.2s ease;
+  }
+  .social-btn:hover {
+    background-color: #f5f5f5;
+  }
+  .social-btn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Form */
+  form input[type="email"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+  }
+
+  /* Buttons container */
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .forgot-btn {
+    background: none;
+    border: none;
+    font-weight: 700;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+  }
+  .forgot-btn:hover {
+    text-decoration: underline;
+  }
+
+  .signin-btn {
+    background-color: #22a455;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+  }
+  .signin-btn:hover {
+    background-color: #1a7c3c;
+  }
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="logo">W<sup>3</sup>schools</div>
+      <h1>
+        Become a W3Schooler <span class="heart">💚</span>
+      </h1>
+      <p>Free to use, easy to love</p>
+      <ul class="features">
+        <li>Track your progress</li>
+        <li>Set your goals</li>
+        <li>Get a personalized learning path</li>
+        <li>Test your skills</li>
+        <li>Practice coding in browser</li>
+        <li>Build and host a website</li>
+        <li>Teacher Toolbox</li>
+      </ul>
+    </div>
+    <div class="right-panel">
+      <div class="close-btn" title="Close">×</div>
+      <h2>Sign in</h2>
+      <p class="subtext">Get access to more learning features</p>
+      <p class="register-text">
+        Don't have an account? <a href="#">Register</a>
+      </p>
+      <div class="social-login">
+        <button class="social-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" /> Google
+        </button>
+        <button class="social-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" /> Facebook
+        </button>
+        <button class="social-btn">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github" /> Github
+        </button>
+        <button class="social-btn">
+          <img src="https://avatars.githubusercontent.com/u/54224840?s=200&v=4" alt="Feide" /> Feide
+        </button>
+      </div>
+      <div style="text-align: center; color: #999; margin-bottom: 20px;">OR</div>
+      <form>
+        <input type="email" placeholder="email" required />
+        <input type="password" placeholder="password" required />
+        <div class="btn-group">
+          <button type="button" class="forgot-btn">Forgot Password?</button>
+          <button type="submit" class="signin-btn">Sign in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

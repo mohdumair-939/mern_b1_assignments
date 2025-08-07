@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albert Einstein - Wikipedia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Linux+Libertine&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Linux Libertine", Georgia, serif;
+      background-color: #f8f9fa;
+      color: #202122;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #a2a9b1;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+      font-weight: normal;
+    }
+
+    .container {
+      display: flex;
+      padding: 0;
+    }
+
+    nav {
+      width: 220px;
+      background-color: #f6f6f6;
+      border-right: 1px solid #a2a9b1;
+      padding: 20px 10px;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+    }
+
+    nav h3 {
+      font-size: 16px;
+      margin-top: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    nav ul li {
+      margin: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0645ad;
+      font-size: 15px;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 20px 30px;
+      background-color: white;
+      line-height: 1.6;
+    }
+
+    h2 {
+      font-size: 24px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 6px;
+    }
+
+    .infobox {
+      float: right;
+      width: 270px;
+      margin: 0 0 20px 20px;
+      border: 1px solid #a2a9b1;
+      background: #f8f9fa;
+      font-size: 90%;
+    }
+
+    .infobox img {
+      width: 100%;
+      height: auto;
+    }
+
+    .infobox table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .infobox td {
+      padding: 8px;
+      border-top: 1px solid #a2a9b1;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 15px;
+      background-color: #f0f0f0;
+      border-top: 1px solid #a2a9b1;
+    }
+
+    a {
+      color: #0645ad;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      nav {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .infobox {
+        float: none;
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia logo">
+    <h1>Wikipedia</h1>
+  </header>
+
+  <div class="container">
+    <nav>
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#">Main Page</a></li>
+        <li><a href="#">Contents</a></li>
+        <li><a href="#">Featured articles</a></li>
+        <li><a href="#">Current events</a></li>
+        <li><a href="#">Random article</a></li>
+        <li><a href="#">About Wikipedia</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Albert Einstein</h2>
+      <div class="infobox">
+        <table>
+          <tr>
+            <td colspan="2"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" alt="Albert Einstein"></td>
+          </tr>
+          <tr>
+            <td><strong>Born</strong></td>
+            <td>14 March 1879</td>
+          </tr>
+          <tr>
+            <td><strong>Died</strong></td>
+            <td>18 April 1955</td>
+          </tr>
+          <tr>
+            <td><strong>Nationality</strong></td>
+            <td>German</td>
+          </tr>
+          <tr>
+            <td><strong>Fields</strong></td>
+            <td>Physics</td>
+          </tr>
+          <tr>
+            <td><strong>Known for</strong></td>
+            <td>Theory of Relativity</td>
+          </tr>
+        </table>
+      </div>
+
+      <p><strong>Albert Einstein</strong> was a German-born theoretical physicist widely acknowledged as one of the greatest and most influential physicists of all time. He is best known for developing the theory of relativity, but he also made important contributions to the development of the theory of quantum mechanics.</p>
+
+      <h3>Early Life</h3>
+      <p>Einstein was born in Ulm, in the Kingdom of Württemberg in the German Empire, on 14 March 1879. His family moved to Munich shortly thereafter. He had a passion for mathematics and science from an early age.</p>
+
+      <h3>Scientific Contributions</h3>
+      <p>In 1905, he published four groundbreaking papers in the <em>Annalen der Physik</em>, which brought him to the notice of the academic world. These papers included the theory of special relativity and the famous equation E = mc².</p>
+
+      <h3>Nobel Prize</h3>
+      <p>He was awarded the Nobel Prize in Physics in 1921 for his explanation of the photoelectric effect, a pivotal step in the development of quantum theory.</p>
+
+      <h3>Legacy</h3>
+      <p>Einstein's work continues to influence the world of physics and beyond. His name is synonymous with "genius," and his image is one of the most recognizable in the world.</p>
+
+      <h3>References</h3>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">Albert Einstein – Wikipedia</a></li>
+        <li>Einstein, A. (1916). "The Foundation of the General Theory of Relativity".</li>
+        <li>Isaacson, W. (2007). *Einstein: His Life and Universe*.</li>
+      </ul>
+    </main>
+  </div>
+
+  <footer>
+    This is a sample Wikipedia-style page created for educational and project use only.
+  </footer>
+
+</body>
+</html>

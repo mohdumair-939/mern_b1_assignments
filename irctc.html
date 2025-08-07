@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IRCTC Ticket Booking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #004a99;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>IRCTC Ticket Booking</h1>
+  </header>
+
+  <div class="container">
+    <h2>Book Your Train Ticket</h2>
+    <form id="bookingForm">
+      <div>
+        <label for="from">From Station:</label>
+        <input type="text" id="from" name="from" placeholder="e.g. New Delhi" required>
+      </div>
+
+      <div>
+        <label for="to">To Station:</label>
+        <input type="text" id="to" name="to" placeholder="e.g. Mumbai Central" required>
+      </div>
+
+      <div>
+        <label for="date">Journey Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div>
+        <label for="class">Class:</label>
+        <select id="class" name="class">
+          <option value="SL">Sleeper (SL)</option>
+          <option value="3A">AC 3 Tier (3A)</option>
+          <option value="2A">AC 2 Tier (2A)</option>
+          <option value="1A">AC First Class (1A)</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="quota">Quota:</label>
+        <select id="quota" name="quota">
+          <option value="GN">General</option>
+          <option value="LD">Ladies</option>
+          <option value="SS">Senior Citizen</option>
+          <option value="TQ">Tatkal</option>
+        </select>
+      </div>
+
+      <button type="submit">Search Trains</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>This is a mock IRCTC-style project interface for learning purposes only.</p>
+  </footer>
+
+</body>
+</html>
